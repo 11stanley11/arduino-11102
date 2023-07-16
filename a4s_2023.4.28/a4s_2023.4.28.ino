@@ -13,7 +13,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int value = map(analogRead(vr),0,1023,0,180);
-  Serial.println(value);
-  myservo.write(value);
+  int degree = map(analogRead(vr),0,1023,0,180);
+  Serial.println(degree);
+  myservo.write(degree);
 }
